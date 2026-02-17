@@ -5,21 +5,21 @@
 class Trophy < Formula
   desc "Terminal 3D Model Viewer - View 3D model files in your terminal - ansipixels port"
   homepage "https://github.com/ansipixels"
-  version "1.4.4"
+  version "1.4.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.4.4/trophy_1.4.4_darwin_amd64.zip"
-      sha256 "f05f6f92af6611497cfbb5acc40c41b249fc3d9515098ea11b397ac606465d24"
+      url "https://github.com/ansipixels/trophy/releases/download/v1.4.5/trophy_1.4.5_darwin_amd64.zip"
+      sha256 "93d46ca02fe28054eab850ebe8d0ba66b2f74fc147317e94060a936dea32acdc"
 
       def install
         bin.install "trophy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.4.4/trophy_1.4.4_darwin_arm64.zip"
-      sha256 "9ac5faddd05b44ef4178eabf6d4810f47d65da721e0d40248d959cb26171182d"
+      url "https://github.com/ansipixels/trophy/releases/download/v1.4.5/trophy_1.4.5_darwin_arm64.zip"
+      sha256 "b0d17beca8201db6a58ed99c162b138306d0488791f4eafdc5a748a6b2ee292d"
 
       def install
         bin.install "trophy"
@@ -29,15 +29,15 @@ class Trophy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.4.4/trophy_1.4.4_linux_amd64.tar.gz"
-      sha256 "8be2bca83a3ea07fdbfc6c230ca167dabe7e62d3ebced54a67b4ec6209ae36ac"
+      url "https://github.com/ansipixels/trophy/releases/download/v1.4.5/trophy_1.4.5_linux_amd64.tar.gz"
+      sha256 "fe6d0d3aba846bb10c7a6bc3929fe42799aabf71e9005e137da1895782b2cf66"
       def install
         bin.install "trophy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.4.4/trophy_1.4.4_linux_arm64.tar.gz"
-      sha256 "46cc6ec178a56b692174b15b26d367658dae781c3a9ed2bfa53dd5b8e8f889d3"
+      url "https://github.com/ansipixels/trophy/releases/download/v1.4.5/trophy_1.4.5_linux_arm64.tar.gz"
+      sha256 "eaa8029bf6db651d0af1a573f5cc02cfd156a23be7cfbbaefad47ce62c1eb8c9"
       def install
         bin.install "trophy"
       end
