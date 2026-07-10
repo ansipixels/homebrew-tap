@@ -5,21 +5,21 @@
 class Closeme < Formula
   desc "Fun little TUI where you try to close the box"
   homepage "https://github.com/ansipixels"
-  version "1.1.0"
+  version "1.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ansipixels/closeme/releases/download/v1.1.0/closeme_1.1.0_darwin_amd64.zip"
-      sha256 "ec6f83ea7683102643327cf755a9f7c8508c5df95fc7d95bfbbce19b3250b4b2"
+      url "https://github.com/ansipixels/closeme/releases/download/v1.1.1/closeme_1.1.1_darwin_amd64.zip"
+      sha256 "ffdf950474936aa814af76e71cf1bcb663523784b5f020f538df3d0a4d85f0d5"
 
       define_method(:install) do
         bin.install "closeme"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ansipixels/closeme/releases/download/v1.1.0/closeme_1.1.0_darwin_arm64.zip"
-      sha256 "c77ea22490cff0ccf1f4e03194bd4905a9ae34f3e3622e3238ca0e9cab6ed487"
+      url "https://github.com/ansipixels/closeme/releases/download/v1.1.1/closeme_1.1.1_darwin_arm64.zip"
+      sha256 "0a879b0a74a59cd35ab328faa55e0b213f81715be1e7206233d2b2fbef29be87"
 
       define_method(:install) do
         bin.install "closeme"
@@ -29,15 +29,15 @@ class Closeme < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ansipixels/closeme/releases/download/v1.1.0/closeme_1.1.0_linux_amd64.tar.gz"
-      sha256 "01bf82b286fc6795130428ed779ff6941488d22da52e4a64a83d8983b86f4b83"
+      url "https://github.com/ansipixels/closeme/releases/download/v1.1.1/closeme_1.1.1_linux_amd64.tar.gz"
+      sha256 "00600c6bbbfef86fa87994d963ca2857d81a6ba2837e4b377f90aa19b2b9dbe6"
       define_method(:install) do
         bin.install "closeme"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ansipixels/closeme/releases/download/v1.1.0/closeme_1.1.0_linux_arm64.tar.gz"
-      sha256 "4839e80e171f00bb57135037ba2e5e04bdc4b5807eeff0a254ae0c927f9cab85"
+      url "https://github.com/ansipixels/closeme/releases/download/v1.1.1/closeme_1.1.1_linux_arm64.tar.gz"
+      sha256 "38df2670d5566a201af28bab0e8b78b264bd5b39b8c481765ff28b78c262f353"
       define_method(:install) do
         bin.install "closeme"
       end
