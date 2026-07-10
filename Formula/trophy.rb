@@ -5,23 +5,23 @@
 class Trophy < Formula
   desc "Terminal 3D Model Viewer - View 3D model files in your terminal - ansipixels port"
   homepage "https://github.com/ansipixels"
-  version "1.5.4"
+  version "1.5.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.5.4/trophy_1.5.4_darwin_amd64.zip"
-      sha256 "12e4a102172403aa3da4e46c89846834d04f64e98be6e1b7a0783fb7271d89f6"
+      url "https://github.com/ansipixels/trophy/releases/download/v1.5.5/trophy_1.5.5_darwin_amd64.zip"
+      sha256 "a696e5c5635a885a7b64004fe10d845f16fd0c044501b9cfd4868774d0d4ebcf"
 
-      def install
+      define_method(:install) do
         bin.install "trophy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.5.4/trophy_1.5.4_darwin_arm64.zip"
-      sha256 "644c378e7a9489ee28c2b76f40dcf5adac0b00a08f0b8d9d893256caf3f6a22f"
+      url "https://github.com/ansipixels/trophy/releases/download/v1.5.5/trophy_1.5.5_darwin_arm64.zip"
+      sha256 "b6ad7764eba6702d6de17fc4c94d1cf9e842b14c88fb053719de0642ec21402e"
 
-      def install
+      define_method(:install) do
         bin.install "trophy"
       end
     end
@@ -29,16 +29,16 @@ class Trophy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.5.4/trophy_1.5.4_linux_amd64.tar.gz"
-      sha256 "10a9401bb7ae3e187d94cb7623e3f72b1886d47159c2dbb176ba9dffa5e27819"
-      def install
+      url "https://github.com/ansipixels/trophy/releases/download/v1.5.5/trophy_1.5.5_linux_amd64.tar.gz"
+      sha256 "e2bac8b6e4cd7a299281adb8fb1d14ba47eda35bd8977eac10d3fe28d8617bfb"
+      define_method(:install) do
         bin.install "trophy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ansipixels/trophy/releases/download/v1.5.4/trophy_1.5.4_linux_arm64.tar.gz"
-      sha256 "e3a5aa7a9a99181e64637de53dbff0fd962d1c7088cdb878406e3797cfee206c"
-      def install
+      url "https://github.com/ansipixels/trophy/releases/download/v1.5.5/trophy_1.5.5_linux_arm64.tar.gz"
+      sha256 "a73e8420155eb6a14b86f9c05608a5fad62e9c6b4a8b7c215ccbb73b0e1ff851"
+      define_method(:install) do
         bin.install "trophy"
       end
     end
